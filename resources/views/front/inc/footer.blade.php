@@ -14,8 +14,8 @@
                     </span>
 
                     <nav class="footer__nav">
-                        <a href="about.html">Sobre</a>
-                        <a href="contacts.html">Contato</a>
+                        <a href="#">Sobre</a>
+                        <a href="#">Contato</a>
                     </nav>
 
                     <button class="footer__back" type="button">

@@ -23,15 +23,15 @@
                             <a class="dropdown-toggle header__nav-link" href="#" role="button" id="dropdownMenuHome" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Catálogo <i class="icon ion-ios-arrow-down"></i></a>
 
                             <ul class="dropdown-menu header__dropdown-menu" aria-labelledby="dropdownMenuHome">
-                                <li><a href="index-2.html">Ação</a></li>
-                                <li><a href="index2.html">Aventura</a></li>
-                                <li><a href="index3.html">Terror</a></li>
+                                <li><a href="#">Ação</a></li>
+                                <li><a href="#">Aventura</a></li>
+                                <li><a href="#">Terror</a></li>
                             </ul>
                         </li>
                         <!-- end dropdown -->
 
                         <li class="header__nav-item">
-                            <a href="pricing.html" class="header__nav-link">Planos</a>
+                            <a href="#" class="header__nav-link">Planos</a>
                         </li>
 
 
