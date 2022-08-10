@@ -1,0 +1,21 @@
+{
+  "resources/js/auth/login.js": {
+    "file": "assets/login.f1bfffcc.js",
+    "src": "resources/js/auth/login.js",
+    "isEntry": true,
+    "imports": [
+      "_sweetalert2.all.70f218b5.js"
+    ]
+  },
+  "resources/js/auth/register.js": {
+    "file": "assets/register.7f4e0c2d.js",
+    "src": "resources/js/auth/register.js",
+    "isEntry": true,
+    "imports": [
+      "_sweetalert2.all.70f218b5.js"
+    ]
+  },
+  "_sweetalert2.all.70f218b5.js": {
+    "file": "assets/sweetalert2.all.70f218b5.js"
+  }
+}

@@ -1,9 +1,8 @@
 {
     "private": true,
     "scripts": {
-        "dev": "vite --host cms-movies.herokuapp.com",
+        "dev": "vite --host cms.movies",
         "build": "vite build",
-        "postinstall": "npm run build"
     },
     "devDependencies": {
         "axios": "^0.27",
