@@ -54,10 +54,19 @@
                             <i class="icon ion-ios-search"></i>
                         </button>
 
-                        <a href="signin.html" class="header__sign-in">
+                        @guest()
+                        <a href="{{route('front.login')}}" class="header__sign-in">
                             <i class="icon ion-ios-log-in"></i>
                             <span>Logar</span>
                         </a>
+                        @endguest
+
+                        @auth
+                        <a href="{{route('front.logout')}}" class="header__sign-in">
+                            <i class="icon ion-ios-log-out"></i>
+                            <span>Logout</span>
+                        </a>
+                        @endauth
                     </div>
                     <!-- end header auth -->
 

@@ -25,6 +25,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(UrlGenerator $url)
     {
+        /**
+         * Use to force HTTPS assets rendering
+         */
         $url->forceScheme('https');
         Schema::defaultStringLength(191);
     }

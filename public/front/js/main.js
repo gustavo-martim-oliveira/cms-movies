@@ -21,7 +21,8 @@ $(document).ready(function () {
 		mouseDrag: false,
 		touchDrag: true,
 		dots: false,
-		loop: true,
+		loop: false,
+        rewind: true,
 		autoplay: false,
 		smartSpeed: 700,
 		margin: 20,
@@ -51,7 +52,8 @@ $(document).ready(function () {
 		mouseDrag: false,
 		touchDrag: true,
 		dots: false,
-		loop: true,
+		loop: false,
+        rewind: true,
 		autoplay: false,
 		smartSpeed: 700,
 		margin: 20,
@@ -124,10 +126,11 @@ $(document).ready(function () {
 	Section carousel
 	==============================*/
 	$('.section__carousel').owlCarousel({
-		mouseDrag: false,
+		mouseDrag: true,
 		touchDrag: true,
 		dots: false,
-		loop: true,
+		loop: false,
+        rewind: true,
 		autoplay: false,
 		smartSpeed: 700,
 		margin: 20,

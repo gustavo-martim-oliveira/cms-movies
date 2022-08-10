@@ -19,7 +19,7 @@ class UserSeeder extends Seeder
     {
         $name = 'Movie CMS';
         $lastName = "Laravel App";
-        $email = "noreply@spdev.com.br";
+        $email = "admin@movie.cms";
         $verified = now();
         $password = "123456";
         $role = 'admin';
