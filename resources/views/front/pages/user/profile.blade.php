@@ -37,7 +37,7 @@
                                     @if(auth()->user()->isAdmin())
                                         <span><b>{{auth()->user()->currentPlan()}}</b></span>
                                     @else
-                                        <span>Plano atual: <b>{{auth()->user()->currentPlan()->details->title }}</b></span>
+                                        <span>Plano atual: <b>{{auth()->user()->currentPlan()->details->title ?? auth()->user()->currentPlan()}}</b></span>
                                     @endif
 								</div>
 							</div>
@@ -342,4 +342,5 @@
 
 @push('scripts')
     @vite('resources/js/components/sendForm.js');
+    @vite('resources/js/teste.js')
 @endpush

@@ -35,7 +35,6 @@ class AuthController extends Controller
             return response()->json(['success' => false, 'message' => 'Usuário ou senha inválidos'], 401);
         }
 
-
     }
 
     /**

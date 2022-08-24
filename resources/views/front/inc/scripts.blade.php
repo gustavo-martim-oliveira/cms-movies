@@ -13,3 +13,5 @@
 <script src="{{asset('front/js/main.js')}}"></script>
 @vite('resources/js/app.js')
 @stack('scripts')
+
+
