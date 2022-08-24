@@ -1,21 +1,46 @@
 {
+  "resources/js/app.js": {
+    "file": "assets/app.0713756e.js",
+    "src": "resources/js/app.js",
+    "isEntry": true,
+    "imports": [
+      "__commonjsHelpers.b8add541.js"
+    ]
+  },
+  "resources/js/components/sendForm.js": {
+    "file": "assets/sendForm.cc014181.js",
+    "src": "resources/js/components/sendForm.js",
+    "isEntry": true,
+    "imports": [
+      "_sweetalert2.all.bf165dcb.js",
+      "__commonjsHelpers.b8add541.js"
+    ]
+  },
   "resources/js/auth/login.js": {
-    "file": "assets/login.486d6b79.js",
+    "file": "assets/login.1d39535b.js",
     "src": "resources/js/auth/login.js",
     "isEntry": true,
     "imports": [
-      "_sweetalert2.all.b700eede.js"
+      "_sweetalert2.all.bf165dcb.js",
+      "__commonjsHelpers.b8add541.js"
     ]
   },
   "resources/js/auth/register.js": {
-    "file": "assets/register.c266dd48.js",
+    "file": "assets/register.b9a9b1e8.js",
     "src": "resources/js/auth/register.js",
     "isEntry": true,
     "imports": [
-      "_sweetalert2.all.b700eede.js"
+      "_sweetalert2.all.bf165dcb.js",
+      "__commonjsHelpers.b8add541.js"
     ]
   },
-  "_sweetalert2.all.b700eede.js": {
-    "file": "assets/sweetalert2.all.b700eede.js"
+  "__commonjsHelpers.b8add541.js": {
+    "file": "assets/_commonjsHelpers.b8add541.js"
+  },
+  "_sweetalert2.all.bf165dcb.js": {
+    "file": "assets/sweetalert2.all.bf165dcb.js",
+    "imports": [
+      "__commonjsHelpers.b8add541.js"
+    ]
   }
 }
