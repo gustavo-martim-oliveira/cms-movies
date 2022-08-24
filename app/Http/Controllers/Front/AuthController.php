@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use App\Http\Requests\Auth\LoginRequest;
 use App\Http\Requests\Auth\RegisterRequest;
+use Illuminate\Support\Facades\Redirect;
 
 class AuthController extends Controller
 {
@@ -31,7 +32,7 @@ class AuthController extends Controller
         if($do){
             return response()->json(['success' => true, 'message' => 'Success'], 200);
         }else{
-            return response()->json(['success' => false, 'message' => 'Failed'], 401);
+            return response()->json(['success' => false, 'message' => 'Usuário ou senha inválidos'], 401);
         }
 
 
@@ -44,6 +45,9 @@ class AuthController extends Controller
      * @return void
      */
     public function register(RegisterRequest $request){
+
+        if(Auth::check()) return abort(500, 'Usuário com sessão ativa');
+
         $firstName = $request->firstName;
         $lastName = $request->lastName;
         $email = $request->email;
@@ -72,6 +76,7 @@ class AuthController extends Controller
      * @return void
      */
     public function logout(Request $request){
+        if(!Auth::check()) return redirect()->route('front.index');
         Auth::logout();
         $request->session()->invalidate();
         $request->session()->regenerateToken();

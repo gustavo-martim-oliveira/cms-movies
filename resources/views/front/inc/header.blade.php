@@ -30,9 +30,24 @@
                         </li>
                         <!-- end dropdown -->
 
-                        <li class="header__nav-item">
-                            <a href="#" class="header__nav-link">Planos</a>
-                        </li>
+                        @guest()
+                            <li class="header__nav-item">
+                                <a href="#" class="header__nav-link">Planos</a>
+                            </li>
+                        @endguest
+
+                        @auth()
+                            <!-- dropdown -->
+                            <li class="header__nav-item">
+                                <a class="dropdown-toggle header__nav-link" href="#" role="button" id="dropdownMenuHome" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Minha conta <i class="icon ion-ios-arrow-down"></i></a>
+
+                                <ul class="dropdown-menu header__dropdown-menu" aria-labelledby="dropdownMenuHome">
+                                    <li><a href="{{route('front.auth.profile')}}">Meu perfil</a></li>
+                                    <li><a href="#">Meus vídeos</a></li>
+                                </ul>
+                            </li>
+                            <!-- end dropdown -->
+                        @endauth
 
 
                     </ul>
@@ -55,16 +70,16 @@
                         </button>
 
                         @guest()
-                        <a href="{{route('front.login')}}" class="header__sign-in">
+                        <a href="{{route('front.login')}}" class="header__sign-in" title="Entrar">
                             <i class="icon ion-ios-log-in"></i>
-                            <span>Logar</span>
+                            <span>Entrar</span>
                         </a>
                         @endguest
 
-                        @auth
-                        <a href="{{route('front.logout')}}" class="header__sign-in">
-                            <i class="icon ion-ios-log-out"></i>
-                            <span>Logout</span>
+                        @auth()
+                        <a href="{{route('front.logout')}}" class="header__sign-in" title="Sair">
+                            <i class="icon ion-ios-log-out" style="transform: rotateZ(180deg)"></i>
+                            <span>Sair</span>
                         </a>
                         @endauth
                     </div>

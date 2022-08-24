@@ -20,6 +20,25 @@ Route::group([
 ], function(){
     Route::get('/', [FrontController::class, 'index'])->name('index');
 
+    //Auth group
+    Route::group([
+        'prefix' => 'cliente',
+        'middleware' => 'auth',
+        'as' => 'auth.'
+    ], function(){
+        Route::get('/profile', [FrontController::class, 'profile'])->name('profile');
+
+        Route::group([
+            'prefix' => 'user',
+            'as' => 'user.'
+        ], function(){
+            Route::put('/change-password', [FrontController::class, 'changePassword'])->name('change-password');
+            Route::put('/change-profile', [FrontController::class, 'changeProfile'])->name('change-profile');
+        });
+
+    });
+
+
     // Auth/Register User - Routes
     Route::get('/login', [FrontController::class, 'login'])->name('login');
     Route::post('/login', [AuthController::class, 'login'])->name('do.login');

@@ -1,6 +1,4 @@
-import "../app";
 import Swal from 'sweetalert2'
-import axios from "axios";
 
 window.addEventListener('load', ()=> {
     let form = document.getElementById('sign___form');
@@ -12,11 +10,12 @@ window.addEventListener('load', ()=> {
         axios.post(event.target.action, form)
             .then((response) => {
                 if(response.status === 200) {
-                    Swal.fire('Sucesso!', 'Conta criada com isso', 'success').then(() => {
-                        location.href = "./login";
-                    })
+                    Swal.fire('Sucesso!', 'Conta criada com sucesso!', 'success')
+                        .then(() => {
+                            location.href = "./login";
+                        })
                 }else{
-                    Swal.fire('Erro!',res.data.message, 'error')
+                    Swal.fire('Erro!',response.message, 'error')
                 }
             })
             .catch((error) => {

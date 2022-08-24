@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6124565f309072c205754c28249bda15",
+    "content-hash": "22649820304b443f0ee893e70482e7f1",
     "packages": [
         {
             "name": "brick/math",
-            "version": "0.10.1",
+            "version": "0.10.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/brick/math.git",
-                "reference": "de846578401f4e58f911b3afeb62ced56365ed87"
+                "reference": "459f2781e1a08d52ee56b0b1444086e038561e3f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/brick/math/zipball/de846578401f4e58f911b3afeb62ced56365ed87",
-                "reference": "de846578401f4e58f911b3afeb62ced56365ed87",
+                "url": "https://api.github.com/repos/brick/math/zipball/459f2781e1a08d52ee56b0b1444086e038561e3f",
+                "reference": "459f2781e1a08d52ee56b0b1444086e038561e3f",
                 "shasum": ""
             },
             "require": {
@@ -52,7 +52,7 @@
             ],
             "support": {
                 "issues": "https://github.com/brick/math/issues",
-                "source": "https://github.com/brick/math/tree/0.10.1"
+                "source": "https://github.com/brick/math/tree/0.10.2"
             },
             "funding": [
                 {
@@ -60,7 +60,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-08-01T22:54:31+00:00"
+            "time": "2022-08-10T22:54:19+00:00"
         },
         {
             "name": "dflydev/dot-access-data",
@@ -232,16 +232,16 @@
         },
         {
             "name": "doctrine/dbal",
-            "version": "3.4.0",
+            "version": "3.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/dbal.git",
-                "reference": "118a360e9437e88d49024f36283c8bcbd76105f5"
+                "reference": "94e016428884227245fb1219e0de7d8b86ca16d7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/dbal/zipball/118a360e9437e88d49024f36283c8bcbd76105f5",
-                "reference": "118a360e9437e88d49024f36283c8bcbd76105f5",
+                "url": "https://api.github.com/repos/doctrine/dbal/zipball/94e016428884227245fb1219e0de7d8b86ca16d7",
+                "reference": "94e016428884227245fb1219e0de7d8b86ca16d7",
                 "shasum": ""
             },
             "require": {
@@ -323,7 +323,7 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/dbal/issues",
-                "source": "https://github.com/doctrine/dbal/tree/3.4.0"
+                "source": "https://github.com/doctrine/dbal/tree/3.4.1"
             },
             "funding": [
                 {
@@ -339,7 +339,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-08-06T20:35:57+00:00"
+            "time": "2022-08-16T18:37:46+00:00"
         },
         {
             "name": "doctrine/deprecations",
@@ -1229,16 +1229,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v9.24.0",
+            "version": "v9.25.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "053840f579cf01d353d81333802afced79b1c0af"
+                "reference": "e8af8c2212e3717757ea7f459a655a2e9e771109"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/053840f579cf01d353d81333802afced79b1c0af",
-                "reference": "053840f579cf01d353d81333802afced79b1c0af",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/e8af8c2212e3717757ea7f459a655a2e9e771109",
+                "reference": "e8af8c2212e3717757ea7f459a655a2e9e771109",
                 "shasum": ""
             },
             "require": {
@@ -1405,7 +1405,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2022-08-09T13:43:22+00:00"
+            "time": "2022-08-16T16:36:05+00:00"
         },
         {
             "name": "laravel/sanctum",
@@ -1789,16 +1789,16 @@
         },
         {
             "name": "league/flysystem",
-            "version": "3.2.0",
+            "version": "3.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "ed0ecc7f9b5c2f4a9872185846974a808a3b052a"
+                "reference": "81aea9e5217084c7850cd36e1587ee4aad721c6b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/ed0ecc7f9b5c2f4a9872185846974a808a3b052a",
-                "reference": "ed0ecc7f9b5c2f4a9872185846974a808a3b052a",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/81aea9e5217084c7850cd36e1587ee4aad721c6b",
+                "reference": "81aea9e5217084c7850cd36e1587ee4aad721c6b",
                 "shasum": ""
             },
             "require": {
@@ -1859,7 +1859,7 @@
             ],
             "support": {
                 "issues": "https://github.com/thephpleague/flysystem/issues",
-                "source": "https://github.com/thephpleague/flysystem/tree/3.2.0"
+                "source": "https://github.com/thephpleague/flysystem/tree/3.2.1"
             },
             "funding": [
                 {
@@ -1875,7 +1875,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-07-26T07:26:36+00:00"
+            "time": "2022-08-14T20:48:34+00:00"
         },
         {
             "name": "league/mime-type-detection",
@@ -5575,6 +5575,90 @@
     ],
     "packages-dev": [
         {
+            "name": "barryvdh/laravel-debugbar",
+            "version": "v3.7.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/barryvdh/laravel-debugbar.git",
+                "reference": "3372ed65e6d2039d663ed19aa699956f9d346271"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/barryvdh/laravel-debugbar/zipball/3372ed65e6d2039d663ed19aa699956f9d346271",
+                "reference": "3372ed65e6d2039d663ed19aa699956f9d346271",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/routing": "^7|^8|^9",
+                "illuminate/session": "^7|^8|^9",
+                "illuminate/support": "^7|^8|^9",
+                "maximebf/debugbar": "^1.17.2",
+                "php": ">=7.2.5",
+                "symfony/finder": "^5|^6"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.3.3",
+                "orchestra/testbench-dusk": "^5|^6|^7",
+                "phpunit/phpunit": "^8.5|^9.0",
+                "squizlabs/php_codesniffer": "^3.5"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.6-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Barryvdh\\Debugbar\\ServiceProvider"
+                    ],
+                    "aliases": {
+                        "Debugbar": "Barryvdh\\Debugbar\\Facades\\Debugbar"
+                    }
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ],
+                "psr-4": {
+                    "Barryvdh\\Debugbar\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Barry vd. Heuvel",
+                    "email": "barryvdh@gmail.com"
+                }
+            ],
+            "description": "PHP Debugbar integration for Laravel",
+            "keywords": [
+                "debug",
+                "debugbar",
+                "laravel",
+                "profiler",
+                "webprofiler"
+            ],
+            "support": {
+                "issues": "https://github.com/barryvdh/laravel-debugbar/issues",
+                "source": "https://github.com/barryvdh/laravel-debugbar/tree/v3.7.0"
+            },
+            "funding": [
+                {
+                    "url": "https://fruitcake.nl",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/barryvdh",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-07-11T09:26:42+00:00"
+        },
+        {
             "name": "doctrine/instantiator",
             "version": "1.4.1",
             "source": {
@@ -5954,16 +6038,16 @@
         },
         {
             "name": "laravel/sail",
-            "version": "v1.15.2",
+            "version": "v1.15.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/sail.git",
-                "reference": "8eb6d7116deda5b0e26153c1993f3e326d67768c"
+                "reference": "853dea1fa866a52a93beccc4e5affdc49b98e7d5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/sail/zipball/8eb6d7116deda5b0e26153c1993f3e326d67768c",
-                "reference": "8eb6d7116deda5b0e26153c1993f3e326d67768c",
+                "url": "https://api.github.com/repos/laravel/sail/zipball/853dea1fa866a52a93beccc4e5affdc49b98e7d5",
+                "reference": "853dea1fa866a52a93beccc4e5affdc49b98e7d5",
                 "shasum": ""
             },
             "require": {
@@ -6010,7 +6094,117 @@
                 "issues": "https://github.com/laravel/sail/issues",
                 "source": "https://github.com/laravel/sail"
             },
-            "time": "2022-08-08T20:02:04+00:00"
+            "time": "2022-08-17T13:17:15+00:00"
+        },
+        {
+            "name": "lucascudo/laravel-pt-br-localization",
+            "version": "v1.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lucascudo/laravel-pt-BR-localization.git",
+                "reference": "7470427992f6fe6b2dbe616263ff8da40d1d1599"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lucascudo/laravel-pt-BR-localization/zipball/7470427992f6fe6b2dbe616263ff8da40d1d1599",
+                "reference": "7470427992f6fe6b2dbe616263ff8da40d1d1599",
+                "shasum": ""
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Lucascudo\\LaravelPtBRLocalization\\LaravelPtBRLocalizationServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Lucascudo\\LaravelPtBRLocalization\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Cascudo",
+                    "email": "lucas.sisau@gmail.com"
+                }
+            ],
+            "description": "Arquivos de linguagem em Português do Brasil (pt-BR) para Laravel >= 5.6",
+            "support": {
+                "issues": "https://github.com/lucascudo/laravel-pt-BR-localization/issues",
+                "source": "https://github.com/lucascudo/laravel-pt-BR-localization/tree/v1.2.3"
+            },
+            "time": "2022-06-02T07:43:13+00:00"
+        },
+        {
+            "name": "maximebf/debugbar",
+            "version": "v1.18.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/maximebf/php-debugbar.git",
+                "reference": "0d44b75f3b5d6d41ae83b79c7a4bceae7fbc78b6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maximebf/php-debugbar/zipball/0d44b75f3b5d6d41ae83b79c7a4bceae7fbc78b6",
+                "reference": "0d44b75f3b5d6d41ae83b79c7a4bceae7fbc78b6",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1|^8",
+                "psr/log": "^1|^2|^3",
+                "symfony/var-dumper": "^2.6|^3|^4|^5|^6"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^7.5.20 || ^9.4.2",
+                "twig/twig": "^1.38|^2.7|^3.0"
+            },
+            "suggest": {
+                "kriswallsmith/assetic": "The best way to manage assets",
+                "monolog/monolog": "Log using Monolog",
+                "predis/predis": "Redis storage"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.17-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "DebugBar\\": "src/DebugBar/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Maxime Bouroumeau-Fuseau",
+                    "email": "maxime.bouroumeau@gmail.com",
+                    "homepage": "http://maximebf.com"
+                },
+                {
+                    "name": "Barry vd. Heuvel",
+                    "email": "barryvdh@gmail.com"
+                }
+            ],
+            "description": "Debug bar in the browser for php application",
+            "homepage": "https://github.com/maximebf/php-debugbar",
+            "keywords": [
+                "debug",
+                "debugbar"
+            ],
+            "support": {
+                "issues": "https://github.com/maximebf/php-debugbar/issues",
+                "source": "https://github.com/maximebf/php-debugbar/tree/v1.18.0"
+            },
+            "time": "2021-12-27T18:49:48+00:00"
         },
         {
             "name": "mockery/mockery",

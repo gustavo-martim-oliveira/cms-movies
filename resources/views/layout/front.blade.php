@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-@include('front.inc.head');
+@include('front.inc.head')
 
 <body class="body">
 	@include('front.inc.header')

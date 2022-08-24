@@ -1,4 +1,3 @@
-import "../app";
 import Swal from 'sweetalert2'
 
 window.addEventListener('load', ()=> {
@@ -11,7 +10,7 @@ window.addEventListener('load', ()=> {
         axios.post(e.target.action, form)
             .then( res => {
                 if(res.status === 200) {
-                    Swal.fire('Sucesso', 'Você está logado no sistema', 'success')
+                    location.href = "./";
                 }else{
                     Swal.fire('Erro!',res.data.message, 'error')
                 }

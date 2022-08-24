@@ -1,21 +1,21 @@
 {
   "resources/js/auth/login.js": {
-    "file": "assets/login.f1bfffcc.js",
+    "file": "assets/login.486d6b79.js",
     "src": "resources/js/auth/login.js",
     "isEntry": true,
     "imports": [
-      "_sweetalert2.all.70f218b5.js"
+      "_sweetalert2.all.b700eede.js"
     ]
   },
   "resources/js/auth/register.js": {
-    "file": "assets/register.7f4e0c2d.js",
+    "file": "assets/register.c266dd48.js",
     "src": "resources/js/auth/register.js",
     "isEntry": true,
     "imports": [
-      "_sweetalert2.all.70f218b5.js"
+      "_sweetalert2.all.b700eede.js"
     ]
   },
-  "_sweetalert2.all.70f218b5.js": {
-    "file": "assets/sweetalert2.all.70f218b5.js"
+  "_sweetalert2.all.b700eede.js": {
+    "file": "assets/sweetalert2.all.b700eede.js"
   }
 }
