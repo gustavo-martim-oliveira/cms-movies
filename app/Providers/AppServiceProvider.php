@@ -28,7 +28,9 @@ class AppServiceProvider extends ServiceProvider
         /**
          * Use to force HTTPS assets rendering
          */
-        //$url->forceScheme('https');
+        if(request()->secure()){
+            $url->forceScheme('https');
+        }
         Schema::defaultStringLength(191);
     }
 }
