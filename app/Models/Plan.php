@@ -10,6 +10,10 @@ class Plan extends Model
 {
     use HasFactory;
 
+    protected $casts = [
+        'configuration' => 'json'
+    ];
+
     public function users(){
         return $this->hasMany(UserPlan::class);
     }

@@ -1,0 +1,1 @@
+let o=Echo.private("websocket");o.listenForWhisper("eventoTeste",e=>{alert("whisper Funcionou"),console.log(e)});o.listen(".eventoTeste",function(e){let t=document.querySelectorAll("body");t[0].style="display:none;",console.log(t),console.log(e)});setTimeout(()=>{o.whisper("eventoTeste",{test:"test"}),console.log("whisper event dispatch")},4e3);

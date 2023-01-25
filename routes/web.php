@@ -1,8 +1,9 @@
 <?php
 
+use Illuminate\Support\Facades\Route;
+use App\Gateways\MercadoPago\MercadoPago;
 use App\Http\Controllers\Front\AuthController;
 use App\Http\Controllers\Front\FrontController;
-use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -38,7 +39,6 @@ Route::group([
 
     });
 
-
     // Auth/Register User - Routes
     Route::get('/login', [FrontController::class, 'login'])->name('login');
     Route::post('/login', [AuthController::class, 'login'])->name('do.login');
@@ -46,6 +46,28 @@ Route::group([
     Route::post('/cria-minha-conta', [AuthController::class, 'register'])->name('do.register');
     Route::get('/esqueci-minha-senha', [FrontController::class, 'forgetPassword'])->name('forget-password');
     Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
+
+    //Checkout routes
+    Route::get('checkout/{plan}', [FrontController::class, 'checkout'])->name('checkout');
 });
 
+Route::get('teste', function(){
+    $mp = new MercadoPago;
+    $costumer = [
+        'email' => 'gustavo.drf@hotmail.com',
+        'first_name' => 'Gustavo',
+        'last_name' => 'Martim',
+        'identification' => [
+            'type' => 'CPF',
+            'number' => '39730082804'
+        ]
+    ];
+
+    return $mp->pix([
+        'value' => "0.01",
+        'description' => 'teste'
+    ], $costumer)->qr_code;
+
+
+});
 

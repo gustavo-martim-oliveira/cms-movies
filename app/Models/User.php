@@ -57,7 +57,7 @@ class User extends Authenticatable implements MustVerifyEmail
             return 'Administrador';
         }else{
 
-            $hasPlan = UserPlan::where([['user_id', $this->id], ['active', true]]);
+            $hasPlan = UserPlan::where([['user_id', $this->id], ['active', true]])->orderBy('created_at', 'DESC');
 
             if($hasPlan->count() > 0){
                 return $hasPlan->first();

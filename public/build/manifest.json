@@ -1,6 +1,6 @@
 {
   "resources/js/app.js": {
-    "file": "assets/app.0713756e.js",
+    "file": "assets/app.ccde00fe.js",
     "src": "resources/js/app.js",
     "isEntry": true,
     "imports": [
@@ -33,6 +33,11 @@
       "_sweetalert2.all.bf165dcb.js",
       "__commonjsHelpers.b8add541.js"
     ]
+  },
+  "resources/js/teste.js": {
+    "file": "assets/teste.e2dd7d48.js",
+    "src": "resources/js/teste.js",
+    "isEntry": true
   },
   "__commonjsHelpers.b8add541.js": {
     "file": "assets/_commonjsHelpers.b8add541.js"

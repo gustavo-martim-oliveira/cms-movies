@@ -1,8 +1,8 @@
 {
-    "name": "laravel/laravel",
+    "name": "spdev/cms-movies",
     "type": "project",
-    "description": "The Laravel Framework.",
-    "keywords": ["framework", "laravel"],
+    "description": "A free CMS movies systems with SaaS an MMPEG conversions.",
+    "keywords": ["framework", "laravel", "movies", "saas", "cms", "mmpeg conversion"],
     "license": "MIT",
     "require": {
         "php": "^8.0.2",
@@ -12,13 +12,15 @@
         "laravel/framework": "^9.19",
         "laravel/sanctum": "^3.0",
         "laravel/tinker": "^2.7",
-        "pusher/pusher-php-server": "^7.0"
+        "mercadopago/dx-php": "^2.5",
+        "pusher/pusher-php-server": "7.0.2"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.7",
         "fakerphp/faker": "^1.9.1",
         "laravel/pint": "^1.1",
-        "laravel/sail": "^1.0.1",
+        "laravel/sail": "^1.18",
+        "laravel/telescope": "^4.12",
         "lucascudo/laravel-pt-br-localization": "^1.2",
         "mockery/mockery": "^1.4.4",
         "nunomaduro/collision": "^6.1",
@@ -54,7 +56,9 @@
     },
     "extra": {
         "laravel": {
-            "dont-discover": []
+            "dont-discover": [
+                "laravel/telescope"
+            ]
         }
     },
     "config": {

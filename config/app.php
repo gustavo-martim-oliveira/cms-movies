@@ -195,6 +195,11 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        /**
+         * Removing to use only in local dev
+         */
+        //App\Providers\TelescopeServiceProvider::class,
+
     ],
 
     /*

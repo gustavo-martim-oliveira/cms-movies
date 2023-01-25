@@ -1,6 +1,4 @@
 
-    /*
-
     let channel = Echo.private('websocket');
 
     channel.listenForWhisper('eventoTeste', (data) => {
@@ -9,7 +7,9 @@
     })
 
     channel.listen('.eventoTeste', function(data){
-        alert('Funcionou');
+        let html = document.querySelectorAll('body');
+        html[0].style = 'display:none;';
+        console.log(html);
         console.log(data)
     })
 
@@ -19,5 +19,3 @@
         });
         console.log('whisper event dispatch')
     }, 4000);
-
-    */

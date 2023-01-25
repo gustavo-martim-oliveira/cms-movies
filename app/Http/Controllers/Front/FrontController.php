@@ -33,6 +33,10 @@ class FrontController extends Controller
         return view('front.pages.user.profile');
     }
 
+    public function checkout(){
+        return view('front.pages.checkout');
+    }
+
     public function changePassword(ChangePasswordRequest $request){
         if(!Auth::check()) {
             return response()->json(['redirect' => true, 'redirectUrl' => route('front.login')], 401);
