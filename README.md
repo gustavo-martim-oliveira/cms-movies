@@ -28,4 +28,4 @@
 
 ## Authors
     Gustavo Martim
-    gustavo@spdev.com.br | https://www.linkedin.com/in/gustavo-martim-545b941b8/
+    gustavo@spdev.com.br | [https://www.linkedin.com/in/gustavo-martim-545b941b8/]
