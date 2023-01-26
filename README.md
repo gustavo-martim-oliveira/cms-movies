@@ -24,12 +24,13 @@
     
     Follow these steps
     1) composer install
-    2) npm run build
-    3) php artisan artisan:storage-link
-    4) php artisan key:generator
-    5) php artisan websockets:serve
-    6) php artisan serve
-    7) php npm run dev (Just in DEV mode)
+    2) npm install
+    3) npm run build
+    4) php artisan artisan:storage-link
+    5) php artisan key:generator
+    6) php artisan websockets:serve
+    7) php artisan serve
+    8) php npm run dev (Just in DEV mode)
 
 ## #Authors
     Gustavo Martim
