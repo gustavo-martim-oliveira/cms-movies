@@ -1,7 +1,7 @@
 {
     "name": "spdev/cms-movies",
     "type": "project",
-    "description": "A free CMS movies systems with SaaS an MMPEG conversions.",
+    "description": "A free and open source Saas Platform to manager online movies",
     "keywords": ["framework", "laravel", "movies", "saas", "cms", "mmpeg conversion"],
     "license": "MIT",
     "require": {
