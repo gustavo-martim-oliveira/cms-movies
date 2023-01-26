@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use App\Http\Requests\Auth\LoginRequest;
 use App\Http\Requests\Auth\RegisterRequest;
+use App\Jobs\userRegistrationJob;
 use Illuminate\Support\Facades\Redirect;
 
 class AuthController extends Controller
@@ -62,6 +63,8 @@ class AuthController extends Controller
         ]);
 
         if($user){
+            //Dispatch job
+            UserRegistrationJob::dispatch($user);
             return response()->json(['success' => true, 'message' => 'Conta criada com sucesso!', 'data' => $user], 200);
         }
 

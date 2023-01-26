@@ -239,52 +239,7 @@
                     </div>
                 </div>
 
-                <div class="row row--grid">
-                    <!-- price -->
-                    <div class="col-12 col-md-6 col-lg-4 order-md-2 order-lg-1">
-                        <div class="price">
-                            <div class="price__item price__item--first"><span>Básico</span> <span>Grátis</span></div>
-                            <div class="price__item"><span><i class="icon ion-ios-checkmark"></i> S/prazo</span></div>
-                            <div class="price__item"><span><i class="icon ion-ios-checkmark"></i> 720p</span></div>
-                            <div class="price__item price__item--none"><span><i class="icon ion-ios-close"></i> Avaliações</span></div>
-                            <div class="price__item price__item--none"><span><i class="icon ion-ios-close"></i> Comentários</span></div>
-                            <div class="price__item price__item--none"><span><i class="icon ion-ios-close"></i> Enviar/Download de vídeos</span></div>
-                            <div class="price__item price__item--none"><span><i class="icon ion-ios-close"></i> S/Suporte</span></div>
-                            <a href="#" class="price__btn">Escolher plano</a>
-                        </div>
-                    </div>
-                    <!-- end price -->
-
-                    <!-- price -->
-                    <div class="col-12 col-md-12 col-lg-4 order-md-1 order-lg-2">
-                        <div class="price price--premium">
-                            <div class="price__item price__item--first"><span>Premium</span> <span>R$34.99 <sub>/mês</sub></span></div>
-                            <div class="price__item"><span><i class="icon ion-ios-checkmark"></i> 1 Mês</span></div>
-                            <div class="price__item"><span><i class="icon ion-ios-checkmark"></i> 1080p (Full HD)</span></div>
-                            <div class="price__item"><span><i class="icon ion-ios-checkmark"></i> Avaliações</span></div>
-                            <div class="price__item"><span><i class="icon ion-ios-checkmark"></i> Comentários</span></div>
-                            <div class="price__item price__item--none"><span><i class="icon ion-ios-close"></i> Enviar/Download de vídeos</span></div>
-                            <div class="price__item price__item--none"><span><i class="icon ion-ios-close"></i> Suporte 24/7</span></div>
-                            <a href="#" class="price__btn">Escolher plano</a>
-                        </div>
-                    </div>
-                    <!-- end price -->
-
-                    <!-- price -->
-                    <div class="col-12 col-md-6 col-lg-4 order-md-3">
-                        <div class="price price--premium">
-                            <div class="price__item price__item--first"><span>Super Premium</span> <span>R$84.99 <sub>/mês</sub></span></div>
-                            <div class="price__item"><span><i class="icon ion-ios-checkmark"></i> 1 Mês</span></div>
-                            <div class="price__item"><span><i class="icon ion-ios-checkmark"></i> Até 4K</span></div>
-                            <div class="price__item"><span><i class="icon ion-ios-checkmark"></i> Avaliações</span></div>
-                            <div class="price__item"><span><i class="icon ion-ios-checkmark"></i> Comentários</span></div>
-                            <div class="price__item"><span><i class="icon ion-ios-checkmark"></i> Enviar/Download de vídeos</span></div>
-                            <div class="price__item"><span><i class="icon ion-ios-checkmark"></i> Suporte 24/7</span></div>
-                            <a href="#" class="price__btn">Escolher plano</a>
-                        </div>
-                    </div>
-                    <!-- end price -->
-                </div>
+                <x-plans />
             </div>
         </section>
         <!-- end plans -->

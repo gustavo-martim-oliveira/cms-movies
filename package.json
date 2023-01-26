@@ -1,7 +1,7 @@
 {
     "private": true,
     "scripts": {
-        "dev": "vite --host cms.movies",
+        "dev": "vite --host localhost",
         "build": "vite build"
     },
     "devDependencies": {
