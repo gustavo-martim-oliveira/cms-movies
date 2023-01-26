@@ -27,10 +27,11 @@
     2) npm install
     3) npm run build
     4) php artisan artisan:storage-link
-    5) php artisan key:generator
-    6) php artisan websockets:serve
-    7) php artisan serve
-    8) php npm run dev (Just in DEV mode)
+    5) php artisan migrate --seed
+    6) php artisan key:generator
+    7) php artisan websockets:serve
+    8) php artisan serve
+    9) php npm run dev (Just in DEV mode)
 
 ## #Authors
     Gustavo Martim
