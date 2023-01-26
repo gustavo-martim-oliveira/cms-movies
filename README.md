@@ -4,6 +4,7 @@
 ## #Download
     Composer
     > composer create-project spdev/cms-movies
+
 ## #Requirement's
     - Composer
     - PHP ^ 8.0.2
@@ -20,8 +21,8 @@
 
 ## #How to install
     The project have a default laravel installation!
-    but if you need
-
+    
+    Follow these steps
     1) composer install
     2) npm run build
     3) php artisan artisan:storage-link
