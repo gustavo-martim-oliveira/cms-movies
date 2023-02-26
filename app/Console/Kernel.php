@@ -17,6 +17,8 @@ class Kernel extends ConsoleKernel
     {
         // $schedule->command('inspire')->hourly();
         $schedule->command('telescope:prune')->daily();
+        $schedule->command('store-stripe-products')->everySixHours();
+        $schedule->command('inspire')->everyMinute();
     }
 
     /**

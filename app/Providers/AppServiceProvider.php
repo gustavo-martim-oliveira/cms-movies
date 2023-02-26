@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use Laravel\Cashier\Cashier;
 use Illuminate\Routing\UrlGenerator;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\ServiceProvider;
@@ -35,5 +36,6 @@ class AppServiceProvider extends ServiceProvider
             $url->forceScheme('https');
         }
         Schema::defaultStringLength(191);
+        Cashier::calculateTaxes();
     }
 }

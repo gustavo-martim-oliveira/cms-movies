@@ -1,8 +1,8 @@
 <div class="row row--grid">
     @forelse ($plans as $plan)
         <!-- price -->
-        <div class="col-12 col-md-6 col-lg-4 order-md-2 order-lg-1">
-            <div class="price {{ $plan->value != 0 ? 'price--premium' : '' }}">
+        <div class="{{ $class }} {{$checkout ? 'p-1' : ''}}">
+            <div class="price {{ $plan->value != 0 ? 'price--premium' : '' }}  {{$checkout ? 'm-0' : ''}}">
 
                 <div class="price__item price__item--first"><span>{{$plan->title}}</span> <span>{{ $plan->value != 0 ? 'R$ ' . number_format($plan->value, 2, ',', '.') : 'Grátis' }}</span></div>
                 <div class="price__item"><span><i class="icon ion-ios-checkmark"></i> {{ $plan->period != 0 ? $plan->period . ($plan->period > 1 ? '/Meses': '/Mês') : 'S/prazo' }} </span></div>
@@ -32,13 +32,16 @@
                     <div class="price__item price__item--none"><span><i class="icon ion-ios-close"></i> S/Suporte</span></div>
                 @endif
 
-                <a href="{{ route('front.checkout', $plan->id) }}" class="price__btn">Escolher plano</a>
+                @if(!$checkout)
+                    <a href="{{ route('front.checkout', $plan->id) }}" class="price__btn">Escolher plano</a>
+                @endif
 
             </div>
         </div>
         <!-- end price -->
     @empty
-        <p>Nenhum plano para ser ativado no momento!</p>
+        <div class="col-12 col-md-6 col-lg-4 my-4">
+            <p style="color: white;">Nenhum plano para ser ativado no momento!</p>
+        </div>
     @endforelse
-
 </div>

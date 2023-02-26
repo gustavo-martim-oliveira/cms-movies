@@ -9,16 +9,19 @@
         "beyondcode/laravel-websockets": "^1.13",
         "doctrine/dbal": "^3.4",
         "guzzlehttp/guzzle": "^7.2",
+        "laravel/cashier": "^14.7",
         "laravel/framework": "^9.19",
         "laravel/sanctum": "^3.0",
         "laravel/tinker": "^2.7",
         "mercadopago/dx-php": "^2.5",
         "predis/predis": "^2.1",
-        "pusher/pusher-php-server": "7.0.2"
+        "pusher/pusher-php-server": "7.0.2",
+        "stripe/stripe-php": "^10.5"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.7",
         "fakerphp/faker": "^1.9.1",
+        "laradumps/laradumps": "^1.7",
         "laravel/pint": "^1.1",
         "laravel/sail": "^1.18",
         "laravel/telescope": "^4.12",

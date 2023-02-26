@@ -11,10 +11,21 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use App\Http\Requests\Auth\ChangeProfileRequest;
 use App\Http\Requests\Auth\ChangePasswordRequest;
+use App\Models\Plan;
 
 class FrontController extends Controller
 {
     public function index() {
+
+        if(session()->has('checkout_plan')){
+
+            $plan = session()->get('checkout_plan');
+            session()->forget('checkout_plan');
+            session()->save();
+
+            return response()->json(['redirect' => route('front.checkout', $plan->id)], 200);
+        }
+
         return view('front.pages.index');
     }
 
@@ -33,8 +44,20 @@ class FrontController extends Controller
         return view('front.pages.user.profile');
     }
 
-    public function checkout(){
-        return view('front.pages.checkout');
+    public function checkout(Plan $plan){
+
+        $user = User::find(Auth::id());
+
+        if(!Auth::check()){
+            session('checkout_plan', $plan);
+            session()->put('checkout_plan', $plan);
+            session()->save();
+            return redirect()->route('front.login');
+        }
+
+        $intent = $user->createSetupIntent();
+
+        return view('front.pages.checkout', compact('plan', 'intent'));
     }
 
     public function changePassword(ChangePasswordRequest $request){

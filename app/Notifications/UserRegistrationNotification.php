@@ -44,8 +44,7 @@ class UserRegistrationNotification extends Notification
         return (new MailMessage)
                     ->subject('Boas vindas ao ' . config('app.name') )
                     ->line(ucfirst($this->user->name . ',') . " o seu cadastro foi realizado com sucesso!")
-                    // ->action('Notification Action', url('/'))
-                    ->line('Obrigado por se registrar em nossa plataforma!' . print_r($notifiable));
+                    ->line('Obrigado por se registrar em nossa plataforma!');
     }
 
     /**

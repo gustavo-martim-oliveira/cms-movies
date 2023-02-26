@@ -8,7 +8,7 @@
                         <img src="{{asset('front/img/logo.svg')}}" alt="">
                     </a>
 
-                    <span class="footer__copyright">© {{env('APP_NAME')}}, {{now()->format('Y')}} <br>
+                    <span class="footer__copyright">© {{config('app.name')}}, {{now()->format('Y')}} <br>
                         Theme By <a href="https://themeforest.net/user/dmitryvolkov/portfolio" target="_blank">Dmitry Volkov</a> <br>
                         System By <a href="#">SP Dev</a>
                     </span>

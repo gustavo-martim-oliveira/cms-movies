@@ -9,16 +9,28 @@ class Plans extends Component
 {
 
     private $plans;
+    public $class = 'col-12 col-md-6 col-lg-4 order-md-2 order-lg-1';
+    public $checkout = false;
 
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($checkout = false, object|bool $plan = false)
     {
+        if($checkout) {
+            $this->class = 'col-12';
+            $this->checkout = $checkout;
+        }
+
         $plans = Plan::where('active', true)->orderBy('value', 'asc')->get();
-        $this->plans = $plans;
+        if(!$plan){
+            $this->plans = $plans;
+        }else{
+            $this->plans = Plan::where('id', $plan->id)->get();
+        }
+
     }
 
     /**

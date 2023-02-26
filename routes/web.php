@@ -42,8 +42,8 @@ Route::group([
     // Auth/Register User - Routes
     Route::get('/login', [FrontController::class, 'login'])->name('login');
     Route::post('/login', [AuthController::class, 'login'])->name('do.login');
-    Route::get('/cria-minha-conta', [FrontController::class, 'register'])->name('register');
-    Route::post('/cria-minha-conta', [AuthController::class, 'register'])->name('do.register');
+    Route::get('/criar-minha-conta', [FrontController::class, 'register'])->name('register');
+    Route::post('/criar-minha-conta', [AuthController::class, 'register'])->name('do.register');
     Route::get('/esqueci-minha-senha', [FrontController::class, 'forgetPassword'])->name('forget-password');
     Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
 
@@ -51,23 +51,4 @@ Route::group([
     Route::get('checkout/{plan}', [FrontController::class, 'checkout'])->name('checkout');
 });
 
-Route::get('teste', function(){
-    $mp = new MercadoPago;
-    $costumer = [
-        'email' => 'gustavo.drf@hotmail.com',
-        'first_name' => 'Gustavo',
-        'last_name' => 'Martim',
-        'identification' => [
-            'type' => 'CPF',
-            'number' => '39730082804'
-        ]
-    ];
-
-    return $mp->pix([
-        'value' => "0.01",
-        'description' => 'teste'
-    ], $costumer)->qr_code;
-
-
-});
 

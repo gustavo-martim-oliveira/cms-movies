@@ -4,13 +4,13 @@ namespace App\Http\Controllers\Front;
 
 use App\Models\User;
 use Illuminate\Http\Request;
+use App\Jobs\userRegistrationJob;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use App\Http\Requests\Auth\LoginRequest;
-use App\Http\Requests\Auth\RegisterRequest;
-use App\Jobs\userRegistrationJob;
 use Illuminate\Support\Facades\Redirect;
+use App\Http\Requests\Auth\RegisterRequest;
 
 class AuthController extends Controller
 {
@@ -31,6 +31,16 @@ class AuthController extends Controller
         $do = Auth::attempt(['email' => $email, 'password' => $password], true);
 
         if($do){
+
+            if(session()->has('checkout_plan')){
+
+                $plan = session()->get('checkout_plan');
+                session()->forget('checkout_plan');
+                session()->save();
+
+                return response()->json(['redirect' => route('front.checkout', $plan->id)], 200);
+            }
+
             return response()->json(['success' => true, 'message' => 'Success'], 200);
         }else{
             return response()->json(['success' => false, 'message' => 'Usuário ou senha inválidos'], 401);

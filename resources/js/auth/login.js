@@ -10,7 +10,13 @@ window.addEventListener('load', ()=> {
         axios.post(e.target.action, form)
             .then( res => {
                 if(res.status === 200) {
-                    location.href = "./";
+
+                    if(typeof res.data.redirect != 'undefined'){
+                        location.href = res.data.redirect
+                    }else{
+                        location.href = "./";
+                    }
+
                 }else{
                     Swal.fire('Erro!',res.data.message, 'error')
                 }
