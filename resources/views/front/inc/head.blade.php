@@ -23,4 +23,7 @@
 	<meta name="keywords" content="">
 	<meta name="author" content="Dmitry Volkov">
 	<title>{{$title ?? 'Online movies CMS App In Laravel'}} | {{env('APP_NAME') ?? 'Movies CMS'}}</title>
+
+    @stack('head')
+    @stack('styles')
 </head>

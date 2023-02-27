@@ -20,7 +20,7 @@ return new class extends Migration
             $table->unsignedBigInteger('user_id')->nullable();
 
             //Payment Details
-            $table->string('payment_getway')->nullable();
+            $table->string('payment_getaway')->nullable();
             $table->double('payment_value')->nullable();
             $table->timestamp('payment_date')->nullable();
 

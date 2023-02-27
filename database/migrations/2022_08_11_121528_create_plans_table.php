@@ -26,7 +26,7 @@ return new class extends Migration
 
             $table->boolean('has_new_user_discount')->default(false)->comment('Discount for new registered users');
             $table->enum('new_user_discount_type', ['value', 'percentage'])->nullable();
-            $table->double('new_user_discount');
+            $table->double('new_user_discount')->default(0);
 
             $table->boolean('active')->default(true);
             $table->softDeletes();

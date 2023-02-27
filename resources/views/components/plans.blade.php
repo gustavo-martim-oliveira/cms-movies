@@ -5,7 +5,7 @@
             <div class="price {{ $plan->value != 0 ? 'price--premium' : '' }}  {{$checkout ? 'm-0' : ''}}">
 
                 <div class="price__item price__item--first"><span>{{$plan->title}}</span> <span>{{ $plan->value != 0 ? 'R$ ' . number_format($plan->value, 2, ',', '.') : 'Grátis' }}</span></div>
-                <div class="price__item"><span><i class="icon ion-ios-checkmark"></i> {{ $plan->period != 0 ? $plan->period . ($plan->period > 1 ? '/Meses': '/Mês') : 'S/prazo' }} </span></div>
+                <div class="price__item"><span><i class="icon ion-ios-checkmark"></i> {{ $plan->period != 0 ? ($plan->period > 1 ? 'a cada '. $plan->period .' meses': 'Todo mês') : 'S/prazo' }} </span></div>
                 <div class="price__item"><span><i class="icon ion-ios-checkmark"></i> Até {{ $plan->configuration['video_size'] == 'infinite' ? '4K' : $plan->configuration['video_size'] }}</span></div>
 
                 @if($plan->configuration['rating'] == 'true')

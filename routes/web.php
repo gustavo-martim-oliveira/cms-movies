@@ -49,6 +49,7 @@ Route::group([
 
     //Checkout routes
     Route::get('checkout/{plan}', [FrontController::class, 'checkout'])->name('checkout');
+    Route::post('checkout/process', [FrontController::class, 'checkoutProcess'])->name('checkout.process');
 });
 
 

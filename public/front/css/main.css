@@ -3875,3 +3875,90 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 .mCS-custom-bar3.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
   background-color: #f9ab00;
 }
+
+.form-checkout {
+    padding: 15px;
+    box-sizing: border-box;
+    background: #3b59994b;
+    border-radius: 15px;
+}
+.form-checkout > input {
+    width: 100%;
+    border: 0;
+    border-bottom:1px solid #3b59994b;
+    border-radius: 15px 15px 0 0;
+    padding: 15px 15px;
+    font-size: 15px;
+    font-size: 16px;
+    color: #32325d !important;
+}
+.form-checkout > input::placeholder {
+    color: #32325d !important;
+}
+#card-element {
+    padding: 25px;
+    background-color: #FFF;
+}
+
+.form-checkout > button {
+    background: #1da1f2;
+    padding: 25px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    border-radius: 0 0 15px 15px;
+    transition: all 0.5s ease-in-out;
+}
+
+.form-checkout > button:hover {
+    background: #3b5999;
+}
+
+
+div.bg-white {
+    background-color: #FFF;
+    border-radius: 10px;
+}
+
+.w-100 {
+    width: 100% !important;
+}
+
+.alert {
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.alert p > strong {
+    font-size: 21px;
+}
+.alert.alert-danger {
+    background: #de717164;
+    color: #841b1b;
+}
+
+.card {
+    width: 100%;
+    background-color: #33313d;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.card .card-header,
+.card .card-body,
+.card .card-footer {
+    width:100%;
+    padding: 3.5%;
+}
+.card .card-header{
+    color: #FFF;
+}

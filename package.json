@@ -1,7 +1,7 @@
 {
     "private": true,
     "scripts": {
-        "dev": "vite --host localhost",
+        "dev": "vite --host movies.test",
         "build": "vite build"
     },
     "devDependencies": {
@@ -12,6 +12,7 @@
         "vite": "^3.0.0"
     },
     "dependencies": {
+        "js-circle-progress": "^0.2.4",
         "laravel-echo": "^1.13.1",
         "pusher-js": "^7.4.0",
         "sweetalert2": "^11.4.26"

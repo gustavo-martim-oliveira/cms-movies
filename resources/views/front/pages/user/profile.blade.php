@@ -86,7 +86,7 @@
 		<div class="container">
 			<!-- content tabs -->
 			<div class="tab-content">
-				<div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="1-tab">
+				<div class="tab-pane fade " id="tab-1" role="tabpanel" aria-labelledby="1-tab">
 					<div class="row row--grid">
 
 						<!-- stats -->
@@ -192,9 +192,13 @@
 					</div>
 				</div>
 
-				<div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="2-tab">
+				<div class="tab-pane fade show active" id="tab-2" role="tabpanel" aria-labelledby="2-tab">
                     @if(!auth()->user()->isAdmin())
-                        <x-plans></x-plans>
+                        @if(auth()->user()->activePlan() != false)
+                            <x-my-plan></x-my-plan>
+                        @else
+                            <x-plans></x-plans>
+                        @endif
                     @else
                         <div class="row">
                             <div class="col-12 d-flex align-items-center justify-content-center flex-column" style="color: #FFF; min-height: 100px">
@@ -296,5 +300,4 @@
 
 @push('scripts')
     @vite('resources/js/components/sendForm.js');
-    @vite('resources/js/teste.js')
 @endpush

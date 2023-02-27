@@ -68,6 +68,20 @@ class User extends Authenticatable implements MustVerifyEmail
 
     }
 
+    public function activePlan(){
+        if($this->role == 'admin') {
+            return false;
+        }else{
+
+            $hasPlan = UserPlan::where([['user_id', $this->id], ['active', true]])->orderBy('created_at', 'DESC');
+            if($hasPlan->count() > 0){
+                return $hasPlan->first();
+            }
+
+            return false;
+        }
+    }
+
     public function isAdmin() {
         if($this->role == 'admin') {
             return true;

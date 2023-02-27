@@ -11,6 +11,13 @@ class UserPlan extends Model
 {
     use HasFactory;
 
+    protected $guarded = [];
+
+    protected $casts = [
+        'start' => 'timestamp',
+        'end' => 'timestamp'
+    ];
+
     public function details(){
         return $this->belongsTo(Plan::class, 'plan_id', 'id');
     }

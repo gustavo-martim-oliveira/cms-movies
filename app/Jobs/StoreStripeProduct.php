@@ -96,7 +96,11 @@ class StoreStripeProduct implements ShouldQueue
                             ]
                         ];
                     }
-                    Product::create($product);
+
+                    $productDetail = Product::create($product);
+                    $plan->update(['stripe_link' => $productDetail->default_price]);
+                    $plan->stripe_link = $productDetail->default_price;
+                    $plan->save();
                     continue;
                 }catch(ApiErrorException $e){
                     Log::error($e);
